@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content ="width=device-width">
+		<meta name="description" content="this website helps you book an online doctor's appointment">
+		<meta name="keywords" content="web design, doctor's appointment, medicare, dermatology">
+		<meta name="author" content="Shreeya, Faustina">
+		<title> Medicare Clinic | Register </title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="icon" type="image/png" href="img/medicinelogo.png"/>
+		<style>
+			.ok, .info, .error {
+	padding: 0px 2px 0px 2px;
+}
+
+.ok {
+	background: #cfc;
+	border: 2px solid #9c9;
+}
+
+.info {
+	background: #ffc;
+	border: 2px solid #cc9;
+}
+
+.error {
+	background: #fcc;
+	border: 2px solid #c99;
+}
+
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/validatepat.js"></script>
+		
+		</head>
+		<body>
+			<header>
+				<div class="container">
+					<div id="branding">
+						<h1><span class="highlight"> Medicare </span> Clinic </h1>
+				</div>
+
+				<nav>
+					<ul>
+						<li ><a href="home.html">Home</a></li>
+						<li  ><a href="services.html">Services</a></li>
+						<li ><a href="admin_login.html">Login</a></li>
+						<li ><a href="home.html#boxes">Faculty</a></li>
+						<li ><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+				</div>
+			</header>
+			
+
+			
+
+			<section id="main">
+				<div class="container">
+					<aside id="vertical">
+					<form method="POST" action="admin_home.php">
+							
+							<button class="button_2">Profile</button>
+							</form>
+						<form method="POST" action="adminDocView.php">
+							
+							<button class="button_2">List of Doctors</button>
+							</form>
+							<form method="POST" action="adminAppView.php">
+							<button class="button_2">List all appointments</button>
+							</form>
+							<form method="POST" action="adminDocAdd.html">
+							<button class="button_2">Add a new Doctor</button> 
+							
+							
+									
+							
+						</form>
+						<div class="container" height="1000"></div>
+						</aside>
+						
+						
+					<article id="main-col">
+						
+						<h3 class="page-title">Add Information</h3>
+						<form id="services"  class="signup" method="POST" action="adminDocAdd.php" >
+							<div>
+								<label>Name</label><br>
+								<input id="lname" type="text" name="lname" placeholder="Enter Name ">
+							</div>
+							<div>
+								<label>Date of birth</label><br>
+								<input id="dob" type="date" name="dob" placeholder="Enter Date of birth ">
+							</div>
+							<div>
+								<label>Gender</label><br>
+								<select name="gender" id="gender" name="gender">
+									<option value="" disabled selected hidden>choose an option...</option>
+									<option value="m">Male</option>
+									<option value="f">Female</option>
+									<option value="o">Other</option>
+  
+								</select>
+							</div>
+							<div>
+								<label>Phone Number</label><br>
+								<input id="contact" name="contact" type="text" placeholder="Enter contact number ">
+							</div>
+							<div>
+								<label>Email</label><br>
+								<input id="email" name="email" type="email" placeholder="Enter Email address ">
+							</div>
+							<div>
+								<label>Day1</label><br>
+								<input id="day1" name="day1" type="text" placeholder="Enter day 1 ">
+							</div>
+							<div>
+								<label>Day2</label><br>
+								<input id="day2" name="day2" type="text" placeholder="Enter day 2 ">
+							</div>
+							<div>
+								<label>Day3</label><br>
+								<input id="day2" name="day2" type="text" placeholder="Enter day 3 ">
+							</div>
+							<div>
+								<label>Timeslot</label><br>
+								<input id="timeslot" name="timeslot" type="text" placeholder="Enter timeslot ">
+							</div>							
+							
+							<button id="register" name="register" class="button_2" type="submit">Submit</button>
+							
+						</form>
+				
+					</article>
+				</div>
+				
+			</section>
+			<footer>
+				<p>
+					Medicare Clinic, Copyright &copy; 2017
+				</p>
+			</footer>
+		</body>
+</html>

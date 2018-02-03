@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content ="width=device-width">
+		<meta name="description" content="this website helps you book an online doctor's appointment">
+		<meta name="keywords" content="web design, doctor's appointment, medicare, dermatology">
+		<meta name="author" content="Shreeya, Faustina">
+		<title> Medicare Clinic | User Login </title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="icon" type="image/png" href="img/medicinelogo.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		</head>
+		<body>
+			<header>
+				<div class="container">
+					<div id="branding">
+						<h1><span class="highlight"> Medicare </span> Clinic </h1>
+				</div>
+
+				<nav>
+					<ul>
+						<li ><a href="home.html">Home</a></li>
+						<li  ><a href="services.html">Services</a></li>
+						<li class="current" ><a href="admin_login.html">Login</a></li>
+						<li ><a href="home.html#boxes">Faculty</a></li>
+						<li ><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+				</div>
+			</header>
+			
+
+			
+
+			<section id="main">
+				<div class="container">
+					
+					<aside id="sidebar">
+						<div class="dark">
+						<h3>Login as User</h3>
+						<form class="quote" id="loginform" method="POST" action="user_auth.php">
+							<div>
+								<label>Email</label><br>
+								<input type="email" id="email_user" name="email_user" placeholder="Email..">
+							</div>
+							<div>
+								<label>Password</label><br>
+								<input type="password" id="pswd_user" name="pswd_user" placeholder="Password..">
+							</div>
+							
+							<button id="login_user" class="button_2" type="submit">Login</button> &nbsp;&nbsp;
+							
+							
+						</form>
+					</div>
+					</aside>
+					<aside id="sidebar">
+						<div class="dark">
+						<h3> Login as Admin</h3>
+						<form action="auth_admin.php" class="quote" method="POST" id="loginform_admin"  >
+							<div>
+								<label>Email</label><br>
+								<input type="email" id="email_admin" name="email_admin" placeholder="Email..">
+							</div>
+							<div>
+								<label>Password</label><br>
+								<input type="password" id="pswd_admin" name="pswd_admin" placeholder="Password..">
+							</div>
+							
+							<button id="login_admin" class="button_2" type="submit">Login</button> &nbsp;&nbsp;
+							
+							
+						</form>
+					</div>
+					</aside>
+				</div>
+				
+			</section>
+			
+			<div></div>
+			<div style="height:200px"></div>
+			
+			<footer>
+				<p>
+					Medicare Clinic, Copyright &copy; 2017
+				</p>
+			</footer>
+		</body>
+</html>
